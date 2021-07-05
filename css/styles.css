@@ -114,23 +114,27 @@ img {
 .section {
   padding: 2rem 0 4rem;
 }
+
 .section__title {
   font-size: var(--h1-font-size);
 }
+
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
 }
-.section__title,.section__subtitle {
+
+.section__title,
+.section__subtitle {
   text-align: center;
 }
 
 /*==================== LAYOUT ====================*/
 .container {
- max-width: 768px;
- margin-left: var(--mb-1-5);
- margin-right: var(--mb-1-5);
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
 }
 
 .grid {
@@ -146,6 +150,7 @@ img {
   z-index: var(--z-fixed);
   background-color: var(--body-color);
 }
+
 /*==================== NAV ====================*/
 .nav {
   max-width: 968px;
@@ -154,17 +159,22 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.nav__logo,.nav__toggle {
+
+.nav__logo,
+.nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
+
 .nav__logo:hover {
   color: var(--first-color);
 }
+
 .nav__toggle {
   font-size: 1.1rem;
   cursor: pointer;
 }
+
 .nav__toggle:hover {
   color: var(--first-color);
 }
@@ -177,15 +187,17 @@ img {
     width: 100%;
     background-color: var(--body-color);
     padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 -1px 4px  rgba(0, 0, 0, .15);
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: .3s;
   }
 }
+
 .nav__list {
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+
 .nav__link {
   display: flex;
   flex-direction: column;
@@ -194,12 +206,15 @@ img {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
+
 .nav__link:hover {
   color: var(--first-color);
 }
+
 .nav__icon {
   font-size: 1.2em;
 }
+
 .nav__close {
   position: absolute;
   right: 1.3rem;
@@ -208,9 +223,11 @@ img {
   cursor: pointer;
   color: var(--first-color);
 }
+
 .nav__close:hover {
   color: var(--first-color-alt);
 }
+
 /* show menu */
 .show-menu {
   bottom: 0;
@@ -226,63 +243,79 @@ img {
 .home__container {
   gap: 1rem;
 }
+
 .home__content {
   grid-template-columns: .5fr 3fr;
   padding-top: 3.5rem;
   align-items: center;
 }
+
 .home__social {
   display: grid;
   grid-template-columns: max-content;
   row-gap: 1rem;
 }
+
 .home__social-icon {
   font-style: 1.25rem;
   color: var(--first-color);
 }
+
 .home__social-icon:hover {
   color: var(--first-color-alt);
 }
+
 .home__blob-img {
   width: 165px;
 }
+
 .home__data {
-  grid-column: 1/ span 2 ;
+  grid-column: 1/ span 2;
 }
+
 .home__title {
   font-size: var(--big-font-size);
 }
+
 .home__subtitle {
   font-size: var(--h3-font-size);
   color: var(--text-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
 }
+
 .home__description {
   margin-bottom: var(--mb-2);
 }
+
 .home__scroll {
   display: none;
 }
+
 .home__scroll-button {
   color: var(--first-color);
   transition: .3s;
 }
+
 .home__scroll-button:hover {
   transform: translateY(.25rem);
 }
+
 .home__scroll-mouse {
   font-size: 2rem;
 }
+
 .home__scroll-name {
   font-size: var(--small-font-size);
   color: var(--text-color);
   font-weight: var(--font-medium);
   margin-right: var(--mb-0-25);
 }
+
 .home__scroll-arow {
   font-size: 1.25rem;
 }
+
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -291,23 +324,67 @@ img {
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
 }
+
 .button:hover {
   background-color: var(--first-color-alt);
 }
+
 .button__icon {
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
   transition: .3s;
 }
+
 .button--flex {
   display: inline-block;
   align-items: center;
 }
+
 /*==================== BUTTONS ====================*/
 
 
 /*==================== ABOUT ====================*/
+.about__img {
+  object-fit: cover;
+  object-position: 6 0;
+  width: 200px;
+  height: 300px;
+  border-radius: .5rem;
+  justify-content: center;
+  align-items: center;
+}
 
+.about__description {
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info-title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.about__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+  flex-wrap: wrap;
+}
+
+.about__info-name {
+  font-size: var(--small-font-size);
+}
+
+.about__info-title,
+.about__info-name {
+  display: block;
+  text-align: center;
+}
+.about__buttons {
+  display: flex;
+  justify-content: center;
+}
 
 /*==================== SKILLS ====================*/
 
