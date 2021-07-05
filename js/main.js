@@ -1,18 +1,18 @@
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.querySelector("#nav-menu"),
-      navToggle = document.querySelector("#nav-toggle"),
-      navClose = document.querySelector("#nav-close");
+  navToggle = document.querySelector("#nav-toggle"),
+  navClose = document.querySelector("#nav-close");
 
 /*===== MENU SHOW =====*/
-if(navToggle) {
-  navToggle.addEventListener('click',() => {
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
     navMenu.classList.add("show-menu");
   });
 }
 
 /*===== MENU HIDDEN =====*/
-if(navClose) {
-  navClose.addEventListener('click',() => {
+if (navClose) {
+  navClose.addEventListener('click', () => {
     navMenu.classList.remove("show-menu");
   });
 }
@@ -20,33 +20,34 @@ if(navClose) {
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link');
 
-function linkAction(){
-    navMenu.classList.remove('show-menu');
+function linkAction() {
+  navMenu.classList.remove('show-menu');
 }
-navLink.forEach(n => n.addEventListener('click',linkAction));
+navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /*==================== ACCORDION SKILLS ====================*/
 const skillsContent = document.getElementsByClassName('skills__content'),
-      skillsHeader = document.querySelectorAll('.skills__header');
+  skillsHeader = document.querySelectorAll('.skills__header');
+
 function toggleSkills() {
   let itemClass = this.parentNode.className;
 
-  for(let i = 0; i < skillsContent.length; i++) {
+  for (let i = 0; i < skillsContent.length; i++) {
     skillsContent[i].className = 'skills__content skills__close';
   }
-  if(itemClass === 'skills__content skills__close') {
+  if (itemClass === 'skills__content skills__close') {
     this.parentNode.className = 'skills__content skills__open';
   }
 }
 skillsHeader.forEach((el) => {
-  el.addEventListener('click',toggleSkills);
+  el.addEventListener('click', toggleSkills);
 });
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
-      tabContents = document.querySelectorAll('[data-content]');
+  tabContents = document.querySelectorAll('[data-content]');
 
-tabs.forEach(tab =>{
-  tab.addEventListener('click',() => {
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
     const target = document.querySelector(tab.dataset.target);
 
     tabContents.forEach(tabContent => {
@@ -62,8 +63,27 @@ tabs.forEach(tab =>{
   });
 });
 /*==================== SERVICES MODAL ====================*/
+const modalViews = document.querySelectorAll('.services__modal'),
+  modalBtns = document.querySelectorAll('.services__button'),
+  modalCloses = document.querySelectorAll('.services__modal-close');
 
+let modal = function (modalClick) {
+  modalViews[modalClick].classList.add('active-modal');
+};
 
+modalBtns.forEach((modalBtn, i) => {
+  modalBtn.addEventListener('click', () => {
+    modal(i);
+  });
+});
+
+modalCloses.forEach((modalClose) => {
+  modalClose.addEventListener('click', () => {
+    modalViews.forEach((modalView) => {
+      modalView.classList.remove('active-modal');
+    });
+  });
+});
 /*==================== PORTFOLIO SWIPER  ====================*/
 
 
