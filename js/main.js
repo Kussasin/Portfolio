@@ -1,19 +1,19 @@
 /*==================== MENU SHOW Y HIDDEN ====================*/
-const navMenu = document.querySelector("#nav-menu"),
-  navToggle = document.querySelector("#nav-toggle"),
-  navClose = document.querySelector("#nav-close");
+const navMenu = document.querySelector('#nav-menu'),
+  navToggle = document.querySelector('#nav-toggle'),
+  navClose = document.querySelector('#nav-close');
 
 /*===== MENU SHOW =====*/
 if (navToggle) {
   navToggle.addEventListener('click', () => {
-    navMenu.classList.add("show-menu");
+    navMenu.classList.add('show-menu');
   });
 }
 
 /*===== MENU HIDDEN =====*/
 if (navClose) {
   navClose.addEventListener('click', () => {
-    navMenu.classList.remove("show-menu");
+    navMenu.classList.remove('show-menu');
   });
 }
 
@@ -85,7 +85,18 @@ modalCloses.forEach((modalClose) => {
   });
 });
 /*==================== PORTFOLIO SWIPER  ====================*/
-
+let swiper = new Swiper('.mySwiper', {
+  cssMode: true,
+  loot:true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+});
 
 /*==================== TESTIMONIAL ====================*/
 
