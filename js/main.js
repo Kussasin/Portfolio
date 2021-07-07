@@ -175,3 +175,34 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme());
     localStorage.setItem('selected-icon', getCurrentIcon());
 });
+/*==================== Validation ====================*/
+function getPoleIf(poleId, obiektRegex) {
+  var obiekField = document.querySelector(poleId).value;
+  if (!obiektRegex.test(obiekField)) {
+    return (undefined);
+  } else {
+    return (obiekField);
+  }
+}
+function Submit() {
+  var name,
+    surname,
+    email,
+    message,
+    obiektNazw = /^[a-zA-Z]{2,20}$/,
+    obiektemail = /^([a-zA-Z0-9])+([.a-zA-Z0-9_-])*@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-]+)+/;
+
+  name = getPoleIf('#name', obiektNazw);
+  surname = getPoleIf('#surname', obiektNazw);
+  email = getPoleIf('#email', obiektemail);
+  //gdy danę użytkownika nie zgadzają się z patternem, to wystąpia odpowiedni komunikat
+  if (name === undefined) {
+    alert("Please enter a valid name ");
+  } else if (surname === undefined) {
+    alert("Please enter a valid surname ");
+  } else if (email === undefined) {
+    alert("Please enter a valid email");
+  } else {
+
+  }
+}

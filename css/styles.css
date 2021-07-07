@@ -400,6 +400,7 @@ img {
   font-size: var(--mb-1);
   font-family: var(--body-font);
   cursor: pointer;
+  border: none;
 }
 
 /*==================== ABOUT ====================*/
