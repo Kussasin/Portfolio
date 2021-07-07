@@ -14,7 +14,7 @@
   <!--==================== CSS ====================-->
   <link rel="stylesheet" href="css/styles.css">
 
-  <title>Переименовать</title>
+  <title>Portfolio Bohdan Basistyi</title>
 </head>
 
 <body>
@@ -85,15 +85,14 @@
               <i class="uil uil-facebook-f"></i>
             </a>
           </div>
-          <div class="home_img">
+          <div class="home__img">
             <img src="img/perfil.png" class="home__blob-img" alt="">
           </div>
           <div class="home__data">
             <h1 class="home__title">Hi, I'am Bohdan</h1>
             <h3 class="home__subtitle"> Junior Front-end developer</h3>
             <p class="home__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam in corporis dolor deserunt natus officiis
-              sint praesentium reiciendis nam ipsum.
+              High level experience in web development, producing quality work.
             </p>
             <a href="#contact" class="button button--flex">
               Contact&nbsp;Me<i class="uil uil-message button__icon"></i>
@@ -117,8 +116,9 @@
       <div class="about__container container grid">
         <img src="img/about.jpg" alt="" class="about__img">
         <div class="about__data">
-          <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, expedita, quia
-            dolorum laudantium vel accusamus id ex illo laborum numquam tempore incidunt ducimus.</p>
+          <p class="about__description">Web developer, with extensive knowledge and aspiration to continuously improve,
+            working in web
+            technologies, delivering quality work.</p>
           <div class="about__info">
             <div>
               <span class="about__info-title">01</span>
@@ -145,7 +145,7 @@
 
       <div class="skills__container container grid">
         <div>
-          <div class="skills__content skills__open">
+          <div class="skills__content skills__close">
             <div class="skills__header">
               <i class="uil uil-brackets-curly skills__icon"></i>
               <h1 class="skills__title">Front-end Developer</h1>
@@ -388,9 +388,9 @@
         <div class="project__container container grid">
           <div class="project__data">
             <h2 class="project__title">You have a new project</h2>
-            <p class="project__description"> Contact Me</p>
+            <p class="project__description"> Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
             <a href="#contact" class="button button--fles button--white">
-              Contact Me <i class="uil uil-message nav__icon project__icon button__icon"></i>
+              Contact&nbsp;Me <i class="uil uil-message nav__icon project__icon button__icon"></i>
             </a>
           </div>
           <img src="img/project.png" alt="" class="project__img">
@@ -403,35 +403,37 @@
 
     <!--==================== CONTACT ME ====================-->
     <section class="contact section" id="contact">
-      <h2 class="section__title">Contact Me</h2>
+      <h2 class="section__title">Contact&nbsp;Me</h2>
       <span class="section__subtitle">Get in touch</span>
 
       <div class="contact__container container grid">
+        <div>
+          <div class="contact__information">
+            <i class="uil uil-phone contact__icon"></i>
+            <div class="contact__title">
+              <h3 class="contact__title">Call Me</h3>
+              <span class="contact__subtitle">504-392-706</span>
+            </div>
+          </div>
 
-        <div class="contact__information">
-          <i class="uil uil-phone contact__icon"></i>
-          <div class="contact__title">
-            <h3 class="contact__title">Call Me</h3>
-            <span class="contact__subtitle">504-392-706</span>
+          <div class="contact__information">
+            <i class="uil uil-envelope contact__icon"></i>
+            <div class="contact__title">
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__subtitle">bohdan.basistyi@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="uil uil-map-marker contact__icon"></i>
+            <div class="contact__title">
+              <h3 class="contact__title">Location</h3>
+              <span class="contact__subtitle">Poland-Lublin</span>
+            </div>
+
           </div>
         </div>
 
-        <div class="contact__information">
-          <i class="uil uil-envelope contact__icon"></i>
-          <div class="contact__title">
-            <h3 class="contact__title">Email</h3>
-            <span class="contact__subtitle">bohdan.basistyi@gmail.com</span>
-          </div>
-        </div>
-
-        <div class="contact__information">
-          <i class="uil uil-map-marker contact__icon"></i>
-          <div class="contact__title">
-            <h3 class="contact__title">Location</h3>
-            <span class="contact__subtitle">Poland-Lublin</span>
-          </div>
-
-        </div>
         <form action="" class="contact__form grid">
           <div class="contact__inputs grid">
             <div class="contact__content">
@@ -442,19 +444,19 @@
               <label for="" class="contact__label">Email</label>
               <input type="email" name="" id="" class="contact__input">
             </div>
-            <div class="contact__content">
-              <label for="" class="contact__label">Project</label>
-              <input type="text" name="" id="" class="contact__input">
-            </div>
-            <div class="contact__content">
-              <label for="" class="contact__label">Message</label>
-              <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-            </div>
-            <div><a href="#" class="button button--flex">
-                Send Message
-                <i class="uil uil-message button__icon"></i>
-              </a>
-            </div>
+          </div>
+          <div class="contact__content">
+            <label for="" class="contact__label">Project</label>
+            <input type="text" name="" id="" class="contact__input">
+          </div>
+          <div class="contact__content">
+            <label for="" class="contact__label">Message</label>
+            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+          </div>
+          <div><a href="#" class="button button--flex">
+              Send Message
+              <i class="uil uil-message button__icon"></i>
+            </a>
           </div>
         </form>
       </div>
@@ -478,7 +480,7 @@
             <a href="#portfolio" class="footer__link">Portfolio</a>
           </li>
           <li>
-            <a href="#contact" class="footer__link">Contact Me</a>
+            <a href="#contact" class="footer__link">Contact&nbsp;Me</a>
           </li>
         </ul>
         <div class="footer__social">
