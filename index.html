@@ -445,20 +445,20 @@
           <div class="contact__inputs grid">
             <div class="contact__content">
               <label for="name" class="contact__label">Name</label>
-              <input type="text" name="Name" id="name" class="contact__input">
+              <input type="text" name="Name" id="name" class="contact__input" required>
             </div>
             <div class="contact__content">
               <label for="surname" class="contact__label">Surname</label>
-              <input type="text" name="Surname" id="surname" class="contact__input">
+              <input type="text" name="Surname" id="surname" class="contact__input" required>
             </div>
           </div>
           <div class="contact__content">
             <label for="email" class="contact__label">Email</label>
-            <input type="email" name="Email" id="email" class="contact__input">
+            <input type="email" name="Email" id="email" class="contact__input" required>
           </div>
           <div class="contact__content">
             <label for="message" class="contact__label">Message</label>
-            <textarea name="Message" id="message" rows="7" class="contact__input"></textarea>
+            <textarea name="Message" placeholder="Oops, it doesn't work because Github Pages doesn't support PHP.&#10;So email me or call me" id="message" rows="7" class="contact__input" required></textarea>
           </div>
           <div><button onclick="Submit()" type="submit" class="button button--flex button__submit">
               Send Message
