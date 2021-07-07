@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--==================== LOGO ====================-->
+  <link href="img/brackets-curly.svg" rel="shortcut icon" type="image/png">
 
   <!--==================== UNICONS ====================-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -434,7 +436,12 @@
           </div>
         </div>
 
-        <form action="mailto:bohdan,basistyi@gmail.com" class="contact__form grid">
+        <form action="mailto:bohdan,basistyi@gmail.com" class="contact__form grid" method="POST">
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Portfolio Bohdan Basistyi">
+          <input type="hidden" name="admin_email" value="bohdan.basistyi@gmail.com">
+          <input type="hidden" name="form_subject" value="Contact Me">
+          <!-- END Hidden Required Fields -->
           <div class="contact__inputs grid">
             <div class="contact__content">
               <label for="name" class="contact__label">Name</label>
@@ -451,12 +458,12 @@
           </div>
           <div class="contact__content">
             <label for="message" class="contact__label">Message</label>
-            <textarea name="Message" id="message"  rows="7" class="contact__input"></textarea>
+            <textarea name="Message" id="message" rows="7" class="contact__input"></textarea>
           </div>
-          <div><a href="https://mail.google.com/mail/u/2/#inbox" target="_blank" class="button button--flex">
+          <div><button type="submit" class="button button--flex button__submit">
               Send Message
               <i class="uil uil-message button__icon"></i>
-            </a>
+            </button>
           </div>
         </form>
       </div>
@@ -509,6 +516,9 @@
 
   <!--==================== MAIN JS ====================-->
   <script src="js/main.js"></script>
+  <!--==================== EMAIL FORM ====================-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
