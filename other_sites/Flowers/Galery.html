@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/logo.PNG" rel="shortcut icon" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/Galery.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <script src="js/lightbox.js"></script>
+    <title>Maison</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Index.html">Maison</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="Katalog.html">Catalog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Galery.html">Galery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Order.html">Order</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <div class="galery">
+        <!--tworzenie galerii za pomocą bootstrap-->
+        <figure class="gallery__item gallery__item--1">
+          <div class="row">
+            <!--W odpowiedniej szyrokości ekranu obrazki będą przyjmowali odpowiedną ilość kolumn(z 12)-->
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <a href="images/Shop-11.jpg" data-lightbox="galeria"><img src="images/Shop-11.jpg"
+                  class="w-100 shadow-1-strong rounded mb-3" /></a>
+                <!--"data-lightbox" umożliwia powieńkszenia obrazków i robienia prostej galerii-->
+              <a href="images/Shop-2.jpg" data-lightbox="galeria"><img src="images/Shop-2.jpg"
+                  class="w-100 shadow-1-strong rounded mb-3"/></a>
+                  <a href="images/Shop-5.jpg" data-lightbox="galeria">
+                    <img src="images/Shop-5.jpg" class="w-100 shadow-1-strong rounded mb-3"/>
+                  </a>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <a href="images/Shop-3.jpg" data-lightbox="galeria">
+                <img src="images/Shop-3.jpg" class="w-100 shadow-1-strong rounded mb-3"/>
+              </a>
+              <a href="images/Shop-4.jpg" data-lightbox="galeria">
+                <img src="images/Shop-4.jpg" class="w-100 shadow-1-strong rounded mb-3"/>
+              </a>
+              <a href="images/Shop-9.jpg" data-lightbox="galeria">
+                <img src="images/Shop-9.jpg" class="w-100 shadow-1-strong rounded mb-3"/>
+              </a>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0 right">
+              <a href="images/Shop-7.jpg" data-lightbox="galeria">
+                <img src="images/Shop-7.jpg" class="w-100 shadow-1-strong rounded mb-3"/>
+              </a>
+              <a href="images/Shop-8.jpg" data-lightbox="galeria">
+                <img src="images/Shop-8.jpg" class="w-100 shadow-1-strong rounded mb-3"/>
+              </a>
+              <a href="images/Shop-10.jpg" data-lightbox="galeria">
+                <img src="images/Shop-10.jpg" class="w-100 shadow-1-strong rounded mb-3"/>
+                <a href="images/Shop-1.jpg" data-lightbox="galeria"><img src="images/Shop-1.jpg"
+                  class="w-100 shadow-1-strong rounded mb-4" alt="bigest_fish" /></a>
+              </a>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+</script>
+
+</html>
