@@ -1,0 +1,77 @@
+#mapka {
+  width: 500px;
+  height: 300px;
+  top: 5rem;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.button_map {
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #223B60;
+  border: 1px solid #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFF;
+  align-items: center;
+  margin: 3rem 0 0 10rem;
+}
+
+.button_map:hover {
+  background-color: #fff;
+  color: #223B60;
+  border: 1px solid#223B60;
+  ;
+}
+
+@media screen and (max-width: 860px) {
+  #mapka {
+    top: 25vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #mapka {
+    top: 85vh;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #mapka {
+    width: 400px;
+    top: 95vh;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  #mapka {
+    width: 400px;
+    top: 110vh;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #mapka {
+    width: 310px;
+    top: 90vh;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #mapka {
+    width: 300px;
+    top: 100vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #mapka {
+    width: 280px;
+    top: 100vh;
+  }
+}

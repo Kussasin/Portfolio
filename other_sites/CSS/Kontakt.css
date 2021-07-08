@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+*::before,
+a::after {
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  padding: 1vh 0 0 0;
+  background-color: #223B60;
+}
+
+.logo {
+  position: relative;
+  height: 80%;
+  left: 2%;
+}
+
+.reference {
+  position: relative;
+  display: block;
+  float: right;
+  flex-direction: row;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.nav_link {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  padding-bottom: 2.9rem;
+  margin-bottom: 0;
+  position: relative;
+  height: 21px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1rem;
+  flex: none;
+  flex-grow: 0;
+  line-height: 27px;
+  margin: 0px 30px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.nav_link:hover {
+  border-bottom: 5px solid rgb(255, 255, 255);
+  color: #fff;
+}
+
+.nav_link.active {
+  border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+
+.hero {
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+.container {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.card {
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  width: 28rem;
+  border-radius: 1rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-body {
+  padding: 2rem 1rem;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: 700;
+  padding-left: 10px;
+
+}
+
+.form-control {
+  margin: 10% auto;
+  border-radius: 0.5rem;
+  width: 18rem;
+}
+
+.btn {
+  display: block;
+  background-color: #223B60;
+  border-radius: 1rem;
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #223B60;
+  border: 1px solid#223B60;
+}
+
+.footer {
+  max-height: 1500px;
+}
+
+.footer_text {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.7rem;
+  color: #223b60;
+}
+
+.footer_name_company {
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 730px) {
+
+  .card {
+    width: 21rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+
+  .form-control {
+    width: 14rem;
+  }
+
+  .card {
+    width: 19rem;
+  }
+
+  .btn {
+    width: 13rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+}

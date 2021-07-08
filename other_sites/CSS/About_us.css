@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+*::before,
+a::after {
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  padding: 1vh 0 0 0;
+  background-color: #223B60;
+}
+
+.logo {
+  position: relative;
+  height: 80%;
+  left: 2%;
+}
+
+.reference {
+  position: relative;
+  display: block;
+  float: right;
+  flex-direction: row;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.nav_link {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  padding-bottom: 3.2rem;
+  margin-bottom: 0;
+  position: relative;
+  height: 21px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1rem;
+  flex: none;
+  flex-grow: 0;
+  line-height: 27px;
+  margin: 0px 30px;
+  color: #FFF;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.nav_link:hover {
+  border-bottom: 5px solid rgb(255, 255, 255);
+  color: #fff;
+}
+
+.nav_link.active {
+  border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+.hero {
+  padding-top: 4%;
+  padding-bottom: 2%;
+  max-height: 1520px;
+}
+
+.container {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.main_title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  margin-bottom: 0.9rem;
+}
+
+.sub_title {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  margin: 0 16rem;
+  text-align: center;
+}
+
+.table_title {
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  margin-bottom: 2.6rem;
+}
+
+.czarter_table {
+  position: relative;
+  margin: 0 auto;
+}
+
+.table_uppercase {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.table_lowercase {
+  font-weight: 900;
+  font-size: 0.55rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ship {
+  padding-bottom: 0.5rem;
+}
+
+.left {
+  padding-left: 2.5rem;
+}
+
+.button_center {
+  text-align: center;
+
+}
+
+.table_button {
+  margin-top: 2rem;
+  width: 11rem;
+  height: 3rem;
+  background-color: #FFF;
+  border: 1px solid #223B60;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.table_button:hover {
+  background-color: #223B60;
+  color: #fff;
+}
+
+.card_title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.card {
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.island_card {
+  width: 24rem;
+  height: 27rem;
+
+}
+
+.mapa_title {
+  text-align: center;
+}
+
+.scale {
+  transition: 1s;
+}
+
+.scale:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .sub_title {
+    margin: 0px 8rem;
+  }
+
+}
+
+@media screen and (max-width: 426px) {
+  .main_title {
+    font-size: 1.7rem;
+  }
+
+  .sub_title {
+    margin: 0px 1rem;
+  }
+
+  .left {
+    padding-left: 1.5rem;
+  }
+
+  .island_card {
+    width: 21rem;
+  }
+
+  .czarter_table {
+    margin-right: 0;
+    margin-left: 3rem;
+
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .czarter_table {
+    margin-left: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .island_card {
+    width: 19rem;
+  }
+
+  .czarter_table {
+    margin-left: 0;
+  }
+
+  .left {
+    padding-left: 0.7rem;
+  }
+}

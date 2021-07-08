@@ -1,0 +1,92 @@
+#myNav {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  #myNav {
+    display: block;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .burger_line {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+  }
+
+  .burger {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    float: right;
+    margin: 1rem 2rem;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #223B60;
+    background-color: rgba(34, 59, 96, 0.98);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    line-height: 3rem;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .overlay a {
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+  }
+}
