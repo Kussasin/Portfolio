@@ -1,68 +1,84 @@
-.html,body {
-    background-color: #f2f7f3;
-    box-sizing: border-box;
+.html,
+body {
+  background-color: #f2f7f3;
+  box-sizing: border-box;
 }
+
 .hero {
-    padding-top: 6rem;
+  padding-top: 6rem;
 
 }
+
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #f2f7f3;
-    box-shadow: 1px 1px 5px 5px rgb(230, 229, 229);
-    border-radius: 15px;
-    width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f2f7f3;
+  box-shadow: 1px 1px 5px 5px rgb(230, 229, 229);
+  border-radius: 15px;
+  width: 50%;
 }
+
 .order_hero {
-    margin: 3rem auto;
+  margin: 3rem auto;
 
 }
+
 .order {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .pole_input {
-    border-radius:5px;
-    border: 1px solid rgb(204, 204, 204);
-    margin: 0.4rem auto;
+  border-radius: 5px;
+  border: 1px solid rgb(204, 204, 204);
+  margin: 0.4rem auto;
 }
+
 .title_input {
-    font-weight: 600;
+  font-weight: 600;
 }
+
 .radio_title {
-    margin-bottom: 0.3rem;
+  margin-bottom: 0.3rem;
 }
+
 .radio_type {
-    text-align: center;
+  text-align: center;
 }
+
 .btn {
-    width: 50%;
-    margin-top: 1rem;
+  width: 50%;
+  margin-top: 1rem;
 }
+
 .mapa {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
+
 #mapka {
-    width: 100%;
-    height: 200px;
+  width: 100%;
+  height: 200px;
 }
-@media screen  and  (max-width: 769px) {
-    .radio_type {
-        font-size: 0.8rem;
-    }
-    .container {
-        width: 60%;
-    }
+
+@media screen and (max-width: 769px) {
+  .radio_type {
+    font-size: 0.8rem;
+  }
+
+  .container {
+    width: 60%;
+  }
 }
-@media screen  and  (max-width: 426px) {
-    .radio_type {
-        font-size: 1rem;
-    }
-    .container {
-        width: 80%;
-    }
+
+@media screen and (max-width: 426px) {
+  .radio_type {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 80%;
+  }
 }

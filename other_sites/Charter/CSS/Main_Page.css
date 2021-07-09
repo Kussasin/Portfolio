@@ -123,6 +123,7 @@ nav {
   color: #223B60;
 
 }
+
 @media screen and (max-width: 736px) {
   .container {
     margin: 0 auto;
@@ -153,6 +154,7 @@ nav {
     margin-left: 7rem;
   }
 }
+
 @media screen and (max-width: 580px) {
   .container {
     margin-left: 5rem;

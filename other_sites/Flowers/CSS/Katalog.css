@@ -1,37 +1,42 @@
 .html,
 body {
-    background-color: #f2f7f3;
-    box-sizing: border-box;
+  background-color: #f2f7f3;
+  box-sizing: border-box;
 }
 
 .card-body {
-    flex: 1 1 auto;
-    padding: 1rem 7rem 1rem 1rem;
+  flex: 1 1 auto;
+  padding: 1rem 7rem 1rem 1rem;
 }
 
 .main {
-    overflow: hidden;
+  overflow: hidden;
 }
-.link_to_Order{
-    text-decoration: none;
-    color: #000;
-    font-size: 0.9rem;
+
+.link_to_Order {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
 }
+
 .link_to_Order:hover {
-    color: rgb(31, 31, 31);
+  color: rgb(31, 31, 31);
 }
+
 .row {
-    justify-content: center;
-    margin-right: 0;
-    margin-left: 0;
+  justify-content: center;
+  margin-right: 0;
+  margin-left: 0;
 }
+
 .price {
-    font-size: 0.8rem;
-    color: rgb(160, 160, 160);
+  font-size: 0.8rem;
+  color: rgb(160, 160, 160);
 }
+
 @media (min-width: 992px) {
-    .row-cols-lg-4>* {
-        flex: 0 0 auto;
-        width: 24%;
-    }
+  .row-cols-lg-4>* {
+    flex: 0 0 auto;
+    width: 24%;
+  }
 }

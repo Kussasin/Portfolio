@@ -48,33 +48,32 @@ document.addEventListener('DOMContentLoaded', () => {
       alert("Niepoprawne nazwisko");
     } else if (user.email === undefined) {
       alert("Niepoprawny Email");
-    }
-      else{
-    //sprawdzam czy istnieją już takie dane w localStorage
-    const duplicateName = users.find(u => u.name === userName);
-    const duplicateEmail = users.find(u => u.email === userEmail);
-    //gdy dane istnieją to występuję odpowiedni komunikat
-    if (duplicateName) {
-      alert("Istnieje już product z taką nazwą!");
-    } else if (duplicateEmail) {
-      alert("Istnieje już użytkownik o podanym emailu!");
-      //gdy nie istnieją to zapisuje dane do zmienej "data"
     } else {
-      data = "Następujące dane zostaną wysłane:\n";
-      data += "Imię : " + user.name + "\n";
-      data += "Nazwisko : " + user.surname + "\n";
-      data += "Email: " + user.email + "\n";
-      data += "Twoja wiadomość: " + user.yourMail + "\n";
-      //gdy dane zostały przyjęte i użytkownik nacisną "OK", to zapisujemy danę do localStorage
-      if (window.confirm(data)) {
-        //Zapisywanie listy z danymo do localStorage
-        localStorage.setItem("users", JSON.stringify([user, ...users]));
-        return true;
+      //sprawdzam czy istnieją już takie dane w localStorage
+      const duplicateName = users.find(u => u.name === userName);
+      const duplicateEmail = users.find(u => u.email === userEmail);
+      //gdy dane istnieją to występuję odpowiedni komunikat
+      if (duplicateName) {
+        alert("Istnieje już product z taką nazwą!");
+      } else if (duplicateEmail) {
+        alert("Istnieje już użytkownik o podanym emailu!");
+        //gdy nie istnieją to zapisuje dane do zmienej "data"
       } else {
-        return false;
+        data = "Następujące dane zostaną wysłane:\n";
+        data += "Imię : " + user.name + "\n";
+        data += "Nazwisko : " + user.surname + "\n";
+        data += "Email: " + user.email + "\n";
+        data += "Twoja wiadomość: " + user.yourMail + "\n";
+        //gdy dane zostały przyjęte i użytkownik nacisną "OK", to zapisujemy danę do localStorage
+        if (window.confirm(data)) {
+          //Zapisywanie listy z danymo do localStorage
+          localStorage.setItem("users", JSON.stringify([user, ...users]));
+          return true;
+        } else {
+          return false;
+        }
       }
     }
-      }
 
   });
 });

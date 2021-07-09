@@ -164,12 +164,15 @@ header {
   header {
     padding: 20px;
   }
+
   .logo {
     max-width: 60px;
   }
+
   .navigation-bar {
     display: none;
   }
+
   .toggle {
     position: relative;
     width: 30px;
@@ -182,6 +185,7 @@ header {
     filter: invert(1);
     z-index: 11;
   }
+
   .toggle.active {
     position: fixed;
     right: 20px;
@@ -190,6 +194,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
   }
+
   .navigation-bar.active {
     position: fixed;
     top: 0;
@@ -203,10 +208,12 @@ header {
     background-color: #fff;
     z-index: 10;
   }
+
   .bar-link {
     font-size: 1.5em;
     margin: 5px 0;
   }
+
   section {
     padding: 20px 20px 120px;
   }
@@ -215,17 +222,21 @@ header {
     flex-direction: column;
     margin-top: 100px;
   }
+
   .headline {
     font-size: 2.5em;
     margin-bottom: 15px;
   }
+
   .textBox {
     max-width: 100%;
   }
+
   .imgBox {
     max-width: 100%;
     justify-content: center;
   }
+
   .starbucks {
     max-width: 300px;
   }
@@ -233,9 +244,11 @@ header {
   .link-cocktail {
     max-width: 40px;
   }
+
   .circle {
     clip-path: circle(400px at center bottom);
   }
+
   .social-media {
     background-color: #017143;
     right: 0;

@@ -18,14 +18,14 @@ function podtwierdz() {
     obiektNazw = /^[a-zA-Z]{2,20}$/,
     obiektemail = /^([a-zA-Z0-9])+([.a-zA-Z0-9_-])*@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-]+)+/,
     obiektPhone = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im,
-    obiektAddress = /^[a-zA-Z0-9\s,.'-]{3,}$/ ,
+    obiektAddress = /^[a-zA-Z0-9\s,.'-]{3,}$/,
     data;
-  //pobieranie danych od użytkownika 
+  //pobieranie danych od użytkownika
   name = getPoleIf('#name', obiektNazw);
   surname = getPoleIf('#surname', obiektNazw);
   email = getPoleIf('#email', obiektemail);
-  tel = getPoleIf('#tel' , obiektPhone);
-  adres = getPoleIf('#adress' , obiektAddress);
+  tel = getPoleIf('#tel', obiektPhone);
+  adres = getPoleIf('#adress', obiektAddress);
   choose = document.querySelector('#choose_flower').value;
   const temp = document.getElementsByName('delivery');
   //gdy danę użytkownika nie zgadzają się z patternem, to wystąpia odpowiedni komunikat
@@ -35,12 +35,12 @@ function podtwierdz() {
     alert("Incorrect surname");
   } else if (email === undefined) {
     alert("Incorrect Email");
-  }else if (adres === undefined) {
+  } else if (adres === undefined) {
     alert("Incorrect address");
-  }else if (tel === undefined) {
+  } else if (tel === undefined) {
     alert("Incorrect Phone number");
-  }else {
-  //zapisanie danych do zmienej z pózniejszem wyswietlaniem na ekran
+  } else {
+    //zapisanie danych do zmienej z pózniejszem wyswietlaniem na ekran
     data = "Następujące dane zostaną wysłane:\n";
     data += "Name : " + name + "\n";
     data += "Surname : " + surname + "\n";
@@ -61,7 +61,7 @@ function podtwierdz() {
       return false;
     }
   }
-/* Zapisywanie danych do localStorage */
+  /* Zapisywanie danych do localStorage */
   function setToCart() {
     var item = {};
     item.name = document.querySelector('#name').value;
