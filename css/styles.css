@@ -941,8 +941,9 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.marged{
-margin-bottom: 30px;
+
+.marged {
+  margin-bottom: 30px;
 }
 
 /*==================== MEDIA QUERIES ====================*/
@@ -976,6 +977,10 @@ margin-bottom: 30px;
 
   .qualification__data {
     gap: .5rem;
+  }
+
+  .skills__list {
+    padding-left: 1.5rem;
   }
 
   .services__modal {
@@ -1016,6 +1021,10 @@ margin-bottom: 30px;
     min-width: 65%;
   }
 
+  .skills__list {
+    padding-left: 1.5rem;
+  }
+
   .qualification__section {
     display: grid;
     grid-template-columns: .60fr;
@@ -1040,6 +1049,10 @@ margin-bottom: 30px;
 
   body {
     margin: 0;
+  }
+
+  .skills__list {
+    padding-left: 2.5rem;
   }
 
   .section {
@@ -1208,6 +1221,10 @@ margin-bottom: 30px;
 
   .swiper-button-prev {
     left: -3.5rem;
+  }
+
+  .skills__list {
+    padding-left: 3.5rem;
   }
 
   .swiper-button-next {
